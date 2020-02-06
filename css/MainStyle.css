@@ -1,7 +1,12 @@
 			body{
     			background-image: url('../Img/backg.png');
-				  background-size: contain;
-				  background-repeat: no-repeat;
+				background-size: contain;
+				background-repeat: no-repeat;
+				overflow: hidden;
+			}
+			.header {
+				
+
 			}
 			/* li a {
 				display: block;
