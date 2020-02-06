@@ -1,7 +1,11 @@
 			body {
-				background-image: url('../Img/backg.png');
-				background-size: auto 100%;
+				/*background-image: url('../Img/backg.png');*/
+				background-size: inherit;
 				background-repeat: no-repeat;
    				/*background-repeat: no-repeat;*/
     			
 			}	
+			/* li a {
+				display: block;
+				width: 60px;
+			  } */
