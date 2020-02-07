@@ -4,16 +4,15 @@
 				background-repeat: no-repeat;
 				/* height: 100vh */
 			}
-			
+			.header{
+				float:left;
+			}
 
 			.logo{
-				position: absolute;
+				float: left;
 			}
-		
-			.navbar {
-				/* a:text-decoration: none;  */
-				 float:right;
-				 
+			nav{
+				float: left;
 			}
 			a:link {
 				text-decoration: none;
