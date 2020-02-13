@@ -2,7 +2,7 @@
 				
 				/* background-image: url('../Img/backg.png'); */
 				background: url('../Img/backg.png'),linear-gradient(to right, #193ECA 50%, #CF2832 50%);
-				background-size: auto 110%;
+				background-size: auto 115%;
 				background-repeat: no-repeat;
 				background-position: center top;
 				/* background-color: linear-gradient(to right, red 50%, blue 50%);
@@ -14,21 +14,21 @@
 				height: 90vh 
 			}
 		
-			.NavbarLeft{
+			#navbarLeft{
 				display:flex;
 			}
 			
-			.logo {	
-				margin: auto;
+			#logo {	
+				margin: auto ;
 				margin-left: 300px;
-				width:150px;
+				width:170px;
 			}
 			
-			.logo, .UpperMenu{margin-right: 45px;}
-			.UpperMenu, .SignUp{margin-right: 150px;}
-			.UpperMenu, .SignIn{margin-right: 50px;}
+			#logo, #upperMenu{margin-right: 45px;}
+			#upperMenu, #signUp{margin-right: 150px;}
+			#upperMenu, #signIn{margin-right: 50px;}
 
-			.TopMenu{
+			#topMenu{
 				text-decoration: none;
 				font-family: 'Open Sans', sans-serif;
 				color:white;
@@ -36,16 +36,17 @@
 				/* font-weight: bold; */
 			}
 
-			.UpperMenu{
+			#upperMenu{
 				margin-top: 25px;
 				word-spacing: 30px;
 				text-decoration: none;
 			}
 
-			.UpperMenu a[selected], a:hover {
+			#upperMenu a[selected], a:hover {
 				border-bottom: 2px solid #fff;
+				color: white;
 			}
-			.SignIn{
+			#signIn{
 				/* width: 100px; */
 				margin-right: 0;
 				border: none;
@@ -61,15 +62,15 @@
 				margin-top: 11px;
 			}
 
-			.SignIn:hover {
+			#signIn:hover {
 				background-color: rgba(255,255,255,0.05);
 			}
 			
-			.SignIn:active {
+			#signIn:active {
 				background-color: rgba(255,255,255,0.1);
 			}
 
-			.SignUp{
+			#signUp{
 				width: 140px;
   				border: none;
   				background-color: white;
@@ -83,11 +84,11 @@
 				margin-top: 11px;
 			}
 			
-			.SignUp:hover {
+			#signUp:hover {
 				background-color: rgba(255,255,255,0.9);
 			}
 			
-			.SignUp:active {
+			#signUp:active {
 				background-color: rgba(255,255,255,0.8);
 			}
 			
@@ -111,7 +112,7 @@
 				color: #fff;
     			font-family: 'Open Sans', sans-serif;
 			}
-			.CreateDesign{
+			#createDesign{
 				background: #ff5969;
 				font-weight: bolder;
 				border-radius: 10px;
@@ -122,11 +123,11 @@
 				margin-top: 40px;
 			}
 
-			.CreateDesign:hover {
+			#createDesign:hover {
 				background-color: rgba(238,83,98,1);
 			}
 			
-			.CreateDesign:active {
+			#createDesign:active {
 				background-color: rgba(220,77,91,1);
 			}
 			footer{
