@@ -1,0 +1,133 @@
+<!-- Comment -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>
+		Spawn of satan
+	</title>
+
+</head>
+
+<body>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<header>
+				<nav id="mainNav" class="navbar navbar-dark navbar-expand-lg navbar-fixed-top col-md-12">
+					<!-- <div class="container-fluid"> -->
+
+						<div class="col-md-1"></div>
+
+						<div id="logoColumn" class="col-sm-auto col-sm-offset-2">
+							<img class="navbar-brand" id="logo" src="Img/logo2.png" alt="machine broke"+ />
+						</div>
+						
+						<!--align-items-end-->
+
+						<div class="order-2 order-md-3 col-md-auto" id="signInUp">
+
+							<ul class="navbar-nav flex-row">
+								<li class="nav-item">
+									<button data-target="#login_Pop" data-toggle="modal" class="nav-item" id="signIn" href="#SIGN IN">SIGN IN</button>
+								
+									<div class="modal" id="login_Pop" tabindex="-1" aria-labelledby="myModalLabel" role="dialog" style="display: none;">
+										<div class="modal-dialog">
+											<div id="modalCont" class="loginmodal-container">
+												<h1>Login to Your Account</h1><br>
+												<form>
+													<input type="text" name="user" placeholder="Username">
+													<input type="password" name="pass" placeholder="Password">
+													<input id="modalLogin" type="submit" name="login" class="login loginmodal-submit" value="Login">
+												</form>
+													
+												<div class="login-help">
+													<a href="#">Register</a> - <a href="#">Forgot Password</a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</li>
+								<li id="signUpLi" class="nav-item">
+									<button class="nav-item" id="signUp" href="#SIGN UP">SIGN UP</button>
+								</li>
+							</ul>
+
+
+							
+								
+
+							
+							<button id="toggleButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#upperMenu">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+
+						</div>
+						<!--d-flex flex-row -->
+
+						<div class="collapse navbar-collapse order-3 order-md-2 col-md-auto" id="upperMenu">
+							<ul class="navbar-nav ml-auto">
+
+								<li class="nav-item">
+									<a id="topMenu" href="#HOME" selected>HOME</a>
+								</li>
+								<li class="nav-item">
+									<a id="topMenu" href="#PRODUCTS">PRODUCTS</a>
+								</li>
+								<li class="nav-item">
+									<a id="topMenu" href="#TEMPLATES">TEMPLATES</a>
+								</li>
+								<li class="nav-item">
+									<a id="topMenu" href="#PRICING">PRICING</a>
+								</li>
+							</ul>
+
+						</div>
+
+						<!-- <div class=" col-2.5" id="upperMenu">
+							<a id="topMenu" href="#HOME" selected>HOME</a>
+							<a id="topMenu" href="#PRODUCTS">PRODUCTS</a>
+							<a id="topMenu" href="#TEMPLATES">TEMPLATES</a>
+							<a id="topMenu" href="#PRICING">PRICING</a>
+						</div> -->
+
+					</div>
+				<!-- </nav> -->
+
+			</header>
+		</div>
+	
+
+		<main>
+
+			<article>
+				<h1>Create Stunning <br /> Visual Media</h1>
+				<p>Super simple tool to create trendy videos and pictures<br />
+					for your ads, social media, blogs and websites.<br />
+					Make you project stand out!</p>
+			</article>
+
+			<button id="createDesign"> CREATE DESIGN &#129122;</button>
+
+		</main>
+
+		<footer>
+			<input type="radio" name="TabSel" checked>
+			<input type="radio" name="TabSel">
+			<input type="radio" name="TabSel">
+			<input type="radio" name="TabSel">
+
+		</footer>
+	</div>
+</body>
+
+</html>
