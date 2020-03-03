@@ -1,10 +1,16 @@
+			html,body {
+				height:100%;
+				width:100%;
+				position:relative;
+			}
+		
 			body{
 				
 				/* background-image: url('../Img/backg.png'); */
 				/* background: url('../Img/backg.png'),linear-gradient(to right, #193ECA 50%, #CF2832 50%); */
 				
 				/* background-size: auto 115%; */
-				background: url('../Img/backg.png');
+				/* background: url('../Img/backg.png'); */
 				background-size: 100% 100%;
 				background-repeat: no-repeat;
 				height: 100vh; 
@@ -19,9 +25,61 @@
     			border-top: 10px solid rbg(255, 255, 0);
 				
 				grid-template-columns: 0.4fr 0.5fr repeat(2, 1fr);
-				grid-template-rows: 0.7fr 2fr repeat(2, 1fr); */
-				
+				grid-template-rows: 0.7fr 2fr repeat(2, 1fr); */	
 			}
+
+			/* Modal forms */
+			#modalLogin {
+				background-color: rgba(0,0,0,.0001) !important;
+				border-color: rgba(0,0,0,.0001);
+				position:absolute;
+		   }
+		   #modalReg {
+				background-color: rgba(0,0,0,.0001) !important;
+				border-color: rgba(0,0,0,.0001);
+				position: absolute;
+		   }
+
+		   .modal-open {
+			overflow: auto; 
+		   }
+
+
+			/*---------------------*/
+
+			/* Carousel */
+
+			#backgCar{
+				position:fixed;
+				width:100%;
+				height:100%;
+				z-index:-1;
+			}
+			.carousel,
+			.carousel-inner {
+				width:100%;
+				height:100%;
+				z-index:0;
+				overflow:hidden;
+			}
+			.carousel-inner .item {
+				width:100%;
+				height:100%;
+				background-size: 100% 100%;
+				background-position:center center;
+				/* background-size:cover; */
+				z-index:0;
+			}
+
+			#carItem{
+				position:fixed;
+				top:0px;
+				left:0px;
+				height:100%;
+			}
+
+			/*------------------------------------- */
+
 
 			#mainBody {
 				display: grid;
@@ -33,6 +91,12 @@
 				
 				/* width: 80vw;*/
 				height: 100vh; 
+
+				position:absolute;
+				z-index:1 !important;
+				min-width:100%;
+				min-height:100%;
+
 			  }			 
 			
 			header{
@@ -137,7 +201,11 @@
 				margin-left: 0px;
 				margin-right: 0px;
 				grid-area: 1 / 1 / 1 / 1;
+				display:block;
 				/* padding-right: 300px; */
+				outline:none;
+				min-width: 190px;
+				min-height: 51px;
 			}
 
 			#hamButton{
@@ -175,22 +243,24 @@
 			}
 
 			#navSelectBar li{
-				padding-right: 80px;
-
+				padding-right: 30px;
+				outline:none;
 				/* box-sizing: border-box;
 				display: inline-block; */
 			}
 			#navSelect a{
 				border-bottom: 0;
+				outline:none;
 			}
 
 			/* #navSelectBar a{
 				display: inline-block;
 			} */
 
-			#navSelectBar #navSelect a[selected], a:hover {
-				border-bottom: 2px solid #fff;
-				color: white;
+			#navSelect a[selected], #navSelect a:hover {
+				border-color: transparent;
+				border-bottom: 2px solid #fff !important;
+				color: white !important;
 			}
 
 			#signInUp{
@@ -204,7 +274,7 @@
 				border: none;
 				background:none;
   				/* background-color: white; */
- 				padding: 14px 28px;
+ 				padding: 14px 28px !important;
   				font-size: 16px;
 				text-align: center;
 				/* border-radius: 4px;   */
@@ -212,6 +282,7 @@
 				color: white;
 				/* float: right; */
 				margin-top: 11px;
+				height: 52px !important;
 			}
 
 			#signIn:hover {
@@ -235,6 +306,7 @@
 				/* float: right; */
 				margin-top: 11px;
 				margin-right: 20px;
+				height: 52px !important;
 			}
 
 			
@@ -284,6 +356,9 @@
 				color: white;
 				/* margin-left: 300px; */
 				margin-top: 40px;
+				min-width: 231px;
+				min-height: 64px;
+				outline:none;
 			}
 
 			#createDesign:hover {
@@ -294,10 +369,11 @@
 				background-color: rgba(220,77,91,1);
 			}
 			footer{
-				grid-area: 4 / 2 / 5 / 3;
+				grid-area: 4 / 2 / 5 / 4;
 				/* margin-top: 100px;
 				margin-left: 290px; */
 			}
+
 
 			footer input[type="radio"]{
 				-webkit-appearance: none;
@@ -305,7 +381,7 @@
 				appearance: none;
 				margin: 11px;
 				display: inline-block;
-				position: relative;
+				position:static;
 				background-color: #4677ff;
 				color: #4677ff;
 				top: 10px;
@@ -320,7 +396,14 @@
 				
 			}
 
-			footer input[type="radio"]:checked{
+			footer input[type="radio"]:hover, :focus{
+				background-color: #0043ff;
+				top: 12.5px;
+				height: 20px;
+    			width: 20px;
+				border: 5px solid #f7bb07;
+			}
+			/* .checkmark{
 				background-color: #0043ff;
 				top: 12.5px;
 				height: 20px;
@@ -328,4 +411,11 @@
 				border: 5px solid #f7bb07;
 			}
 
+			footer input[type="radio"]:active ~ .checkmark{
+				background-color: #0043ff;
+				top: 12.5px;
+				height: 20px;
+    			width: 20px;
+				border: 5px solid #f7bb07;
+			} */
 			
