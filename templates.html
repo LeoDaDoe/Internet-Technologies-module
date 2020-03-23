@@ -4,10 +4,11 @@
 
 <head>
 	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleTemplates.css" />
     <link rel="stylesheet" type="text/css" href="css/media_style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<title>
+    <script src="script/calculator.js"></script>
+    <title>
 		Spawn of satan
 	</title>
 
@@ -147,52 +148,56 @@
                         </li>
                     </ul>
 
-                </div>
-
-                    <!-- <div class=" col-2.5" id="upperMenu">
-                        <a id="topMenu" href="#HOME" selected>HOME</a>
-                        <a id="topMenu" href="#PRODUCTS">PRODUCTS</a>
-                        <a id="topMenu" href="#TEMPLATES">TEMPLATES</a>
-                        <a id="topMenu" href="#PRICING">PRICING</a>
-                    </div> -->
-          
+                </div>      
             </nav>
-
-            
-
         </header>
 
         <main>
-            <article>
-                <h1>Create Stunning <br /> Visual Media</h1>
-                <p>Super simple tool to create trendy videos and pictures<br />
-                    for your ads, social media, blogs and websites.<br />
-                    Make you project stand out!</p>
-            </article>
-
-            <button id="createDesign"> CREATE DESIGN &#129122;</button>
+           <form name="form">
+                <input class="textview" name="textview">
+           </form>
+           <table>
+                <tr>
+                    <td><input class="button" type="button" value="C" onclick="clean()"></td>
+                    <td><input class="button" type="button" value="<" onclick="backsp()"></td>
+                    <td><input class="button" type="button" value="/" onclick="enterValue('/')"></td>
+                    <td><input class="button" type="button" value="-" onclick="enterValue('-')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="1" onclick="enterValue(1)"></td>
+                    <td><input class="button" type="button" value="2" onclick="enterValue(2)"></td>
+                    <td><input class="button" type="button" value="3" onclick="enterValue(3)"></td>
+                    <td><input class="button" type="button" value="+" onclick="enterValue('+')"></td>
+                </tr>
+                <tr>
+                    <td><input class="button" type="button" value="4" onclick="enterValue(4)"></td>
+                    <td><input class="button" type="button" value="5" onclick="enterValue(5)"></td>
+                    <td><input class="button" type="button" value="6" onclick="enterValue(6)"></td>
+                    <td><input  class="button"type="button" value="*" onclick="enterValue('*')"></td>
+                </tr> 
+                <tr>
+                    <td><input class="button" type="button" value="7" onclick="enterValue(7)"></td>
+                    <td><input class="button" type="button" value="8" onclick="enterValue(8)"></td>
+                    <td><input class="button" type="button" value="9" onclick="enterValue(9)"></td>
+                    <td rowspan=5><input style="height: 100px !important;" class="button" type="button" value="=" onclick="cal()"></td>
+                </tr>
+                <tr>
+                    <td colspan=2><input class="button" style="min-width: 100px !important;" type="button" value="0" onclick="enterValue(0)"></td>
+                    <td><input class="button" type="button" value="." onclick="enterValue('.')"></td>
+                </tr>
+           </table>
 
         </main>
 
         <footer>
-            <!-- <div class="carousel-indicators"> -->
-                <input id="carouRadio1" type="radio" name="select" data-target="#carSlide" data-slide-to="0" checked> 
-                <input id="carouRadio2" type="radio" name="select" data-target="#carSlide" data-slide-to="1">
-                <input id="carouRadio3" type="radio" name="select" data-target="#carSlide" data-slide-to="2">
-                <input id="carouRadio4" type="radio" name="select" data-target="#carSlide" data-slide-to="3">
-                <!-- <button id="carouRadio1" name="select" data-target="#carSlide" data-slide-to="0" checked>
-                <button id="carouRadio2" name="select" data-target="#carSlide" data-slide-to="1">
-                <button id="carouRadio3" name="select" data-target="#carSlide" data-slide-to="2">
-                <button id="carouRadio4" type="radio" name="select" data-target="#carSlide" data-slide-to="4"> -->
-            <!-- </div> -->
-            
+
         </footer>
     </div>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    
 </body>
 
 </html>
