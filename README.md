@@ -1,5 +1,6 @@
 # Internet Technologies module
-# Internet technologies website project
+# The module was focused around creating a website one step at a time, this repo is dedicated to 
+# tracking changes made to the project
 First part completed on: 2020-02-08
 -----------------------------------
 Second part completed on: 2020-02-27
